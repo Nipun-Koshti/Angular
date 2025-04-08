@@ -1,0 +1,19 @@
+<p>invoice works!</p>
+
+<div>
+    <h2>Invoice Generator</h2>
+  
+    <label>Customer Name:</label>
+    <input type="text" [(ngModel)]="customerName" placeholder="Enter customer name" />
+  
+    <h3>Items</h3>
+    <button (click)="addItem()">Add Item</button>
+  
+    <div *ngFor="let item of items; let i = index">
+      <input type="text" [(ngModel)]="item.name" placeholder="Item Name" />
+      <input type="text" [(ngModel)]="item.price" placeholder="Price" />
+      <button (click)="removeItem(i)">Remove</button>
+    </div>
+  
+    <button (click)="generatePDF()">Generate PDF</button>
+  </div>

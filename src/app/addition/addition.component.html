@@ -1,0 +1,22 @@
+<Section class="main_content">
+
+    <div class="provider">
+        <div>
+            <label for="num1" >enter the nnum 1</label>
+            <input type="number" [(ngModel)]="num1">
+        </div>
+
+        <div>
+            <label for="num2">enter the nnum 3</label>
+            <input type="number" [(ngModel)]="num2">
+        </div>
+    </div>
+
+    <div class="result">
+        <button (click)="calculateSum()">calculate</button>
+        <p *ngIf="result !== null">{{result}}</p>
+    </div>
+
+
+        
+</Section>

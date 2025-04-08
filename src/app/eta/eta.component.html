@@ -1,0 +1,27 @@
+
+<section class="container">
+    <p>eta works!</p>
+
+
+    <button class="call-btn" (click)="getContent()">api</button>
+
+    <button class="call-btn" (click)="displayContent()" *ngIf="isContent">hello</button>
+
+    <div class="content" *ngIf="idVisible" >
+
+        @for (item of userList; track $index) {
+            <div class="card-wrap">
+
+                <div class="card-title">
+                    <h1>{{item.title}}</h1>
+                </div>
+    
+                <div class="card-content">
+                    <p>{{item.body}}</p>
+                </div>
+    
+            </div>
+        }
+    </div>
+
+</section>

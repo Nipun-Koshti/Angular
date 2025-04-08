@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card-wrap{
+    flex-basis: 100px; /* Each item starts with 200px width */
+    flex-grow: 1; /* Allows items to expand */
+    min-width: 250px;
+    height: 400px;
+    border-radius: 25px;
+    background-color: #777;
+    padding: 30px;
+}
+
+.card-wrap:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+.card-title{
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-content{
+    text-align: justify;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
